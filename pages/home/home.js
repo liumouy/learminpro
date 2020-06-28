@@ -5,7 +5,24 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    name:'刘先生',
+    age:'18',
+    stutdents:[
+      { id: 1, name: '王先生', age: '18' },
+      { id: 2, name: '刘先生', age: '20' },
+      { id: 3, name: '张先生', age: '22' },
+    ],
+    currut:0,
+  },
+  hand(){
+    this.setData({
+      currut:this.data.currut + 1
+    })
+  },
+  handl(){
+    this.setData({
+      currut:this.data.currut - 1
+    })
   },
 
   /**

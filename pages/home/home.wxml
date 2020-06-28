@@ -1,4 +1,9 @@
 <!--pages/home/home.wxml-->
 <text class="title">Hello Word</text>
 <button size="mini">按钮</button>
-<view>知识点2</view>
+<view>Hello {{name}}</view>
+<view>我的年龄：{{age}}</view>
+<view wx:for="{{stutdents}}">{{item.name}}====={{item.age}}</view>
+<view>计数：{{currut}}</view>
+<button bindtap="hand">+</button>
+<button bindtap="handl">-</button>
